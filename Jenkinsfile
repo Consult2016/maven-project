@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('Build'){
             steps {
-                sh '/home/consult2016/Development/artifacts/apache-maven-3.6.0/mvn clean package'
+                sh '/home/consult2016/Development/artifacts/apache-maven-3.6.0/bin/mvn clean package'
             }
             post {
               success {
