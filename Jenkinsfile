@@ -12,5 +12,10 @@ pipeline {
               }
             }
           }
+        stage ('Deploy To Staging'){
+          steps {
+            build job: 'ascdso-deploy-staging'
+          }
+        }
       }
   }
